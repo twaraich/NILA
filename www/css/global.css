@@ -1,0 +1,246 @@
+@import url('fonts.css?v=2.4');
+@import url('reboot.css?v=2.4');
+@import url('header.css?v=2.4');
+@import url('modal.css?v=2.4');
+@import url('form.css?v=2.4');
+@import url('footer.css?v=2.4');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.btn-rounded-blue {
+    padding: 12px 30px;
+    margin: 0;
+    color: #000;
+    font-size: 12px;
+    border: 1px solid #022EB9;
+    border-radius: 40px;
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+    color: #022EB9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-rounded-blue:hover,
+.btn-rounded-blue:focus {
+    color: #022EB9;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.floating-social {
+    position: fixed;
+    right: 0;
+    top: 45%;
+    padding: 10px 5px;
+    margin-top: -92px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 16px 0 0 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.floating-social li {
+    margin-bottom: 10px;
+}
+
+.floating-social li:last-child {
+    margin-bottom: 0;
+}
+
+.floating-social a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/social-media.png');
+    background-size: 200%;
+    border-radius: 100%;
+    margin: 0 auto;
+    transition: all ease-in 500ms;
+}
+
+.icon-instagram {
+    background-position: -25px 0;
+}
+
+.icon-instagram:hover {
+    background-position: -25px 0;
+}
+
+.icon-facebook {
+    background-position: -25px 110px;
+}
+
+.icon-facebook:hover {
+    background-position: -25px 110px;
+}
+
+.icon-youtube {
+    background-position: -25px 83px;
+}
+
+.icon-youtube:hover {
+    background-position: -25px 83px;
+}
+
+.icon-twitter {
+    background-position: -25px 55px;
+}
+
+.icon-twitter:hover {
+    background-position: -25px 55px;
+}
+
+.icon-linkedin {
+    background-position: -25px 27px;
+}
+
+.icon-linkedin:hover {
+    background-position: -25px 27px;
+}
+
+.video-modal-body {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: auto;
+    max-width: 1000px;
+    position: relative;
+    padding: 0 0 56.25%;
+    height: 0;
+}
+
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+#successMessage {
+    font-size: 16px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+*::-webkit-media-controls-panel {
+    display: none!important;
+    -webkit-appearance: none;
+  }
+  
+  /* Old shadow dom for play button */
+  
+  *::-webkit-media-controls-play-button {
+    display: none!important;
+    -webkit-appearance: none;
+  }
+  
+  /* New shadow dom for play button */
+  
+  /* This one works! */
+  
+  *::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+  }

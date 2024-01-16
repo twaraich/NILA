@@ -1,0 +1,355 @@
+.section-menu {
+  background-color: #001f80;
+  background-image: url("../images/menu-page-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.section-menu .row {
+  align-items: center;
+}
+
+.section-menu h1 {
+  font-family: "Lamarkie";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.section-menu .special-heading {
+  font-size: 50px;
+}
+
+.section-menu h1 span {
+  letter-spacing: -55px;
+  margin-right: 65px;
+}
+
+.section-menu p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section-menu .menu-img {
+  border-radius: 320px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.section-menu .menu-img img {
+  border-radius: 320px;
+  border: 1px solid #fff;
+}
+
+.section-menu .menu-img::after {
+  content: "";
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  display: block;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 320px;
+}
+
+.section-menu-item {
+  padding: 90px 0;
+  background-image: url("../images/menu-page-bg.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.video-holder {
+  padding: 56.25% 0 0 0;
+  position: relative;
+  height: 500px;
+  border-radius: 320px;
+  overflow: hidden;
+}
+
+.video-holder video {
+  margin: auto;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 320px;
+  border: 1px solid #fff;
+}
+
+.food-menu {
+  max-width: 1020px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.food-menu button {
+  color: #00030e;
+  font-weight: 400;
+  font-size: 18px;
+  border: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  line-height: 40px;
+  background-color: #fff;
+  border-radius: 0;
+  font-family: "Open Sans";
+  letter-spacing: 0.5px;
+}
+
+.food-menu-item {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.food-menu-item h2 {
+  font-family: "Lamarkie";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 200%;
+  letter-spacing: 2px;
+  color: #022eb9;
+  margin: 0 0 30px;
+}
+
+.food-menu-item h2 span {
+  font-family: "Open Sans";
+  position: relative;
+  top: -10px;
+}
+
+.food-menu-item h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #856434;
+}
+
+.food-menu-item p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+  color: #00030e;
+  margin: 0 0 20px;
+}
+
+.food-menu-item p:last-child {
+  margin: 0;
+}
+
+.food-menu-item p strong {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+}
+
+.food-menu-item p span {
+  display: block;
+  margin: 15px 0;
+}
+
+.food-menu-item p span {
+  font-weight: 300;
+}
+
+.addition-info {
+  background: rgba(199, 159, 1, 0.8);
+  border-radius: 60px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #fbf8f1;
+  padding: 20px;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.food-menu-item hr {
+  width: 300px;
+  margin: 30px auto;
+  border-style: dashed;
+  opacity: 0.2;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+
+.mb-2 {
+  margin-bottom: 20px !important;
+}
+
+.mb-3 {
+  margin-bottom: 30px !important;
+}
+
+@media screen and (max-width: 1180px) {
+  .section-menu .special-heading,
+  .section-menu h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-menu {
+    height: auto;
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .section-menu .col-3 {
+    /* display: none; */
+    width: 100%;
+  }
+
+  .section-menu .col-6 {
+    width: 100%;
+  }
+
+  .section-menu h1 {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+
+  .section-menu h1 span {
+    letter-spacing: -30px;
+  }
+
+  .section-menu p {
+    margin-bottom: 30px;
+  }
+
+  .food-menu {
+    max-width: 90%;
+  }
+
+  .food-menu button {
+    font-size: 16px;
+  }
+
+  .food-menu-item h2 {
+    font-size: 25px;
+  }
+
+  .food-menu-item p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .addition-info {
+    max-width: 90%;
+    font-size: 15px;
+  }
+
+  .addition-info br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .section-menu h1 span {
+    margin-right: 40px;
+  }
+
+  .section-menu-item {
+    padding: 35px 0;
+  }
+
+  .section-menu p {
+    max-width: 100%;
+  }
+
+  .video-holder {
+    height: 320px;
+  }
+
+  .food-menu {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    justify-content: initial;
+    max-width: 100%;
+  }
+
+  .food-menu li {
+    flex: 0 0 auto;
+    padding-right: 25px;
+  }
+
+  .food-menu-item h2 {
+    font-size: 20px;
+  }
+
+  .food-menu-item p br {
+    display: none;
+  }
+
+  .food-menu-item p i {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 26px;
+    color: #00030e;
+  }
+
+  .addition-info {
+    border-radius: 10px;
+  }
+
+  .section-menu h1,
+  .section-menu .special-heading {
+    font-size: 26px;
+  }
+}

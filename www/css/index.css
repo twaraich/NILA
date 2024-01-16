@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #fbfbfb;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    background: #bd9842;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    background: #fbfbfb;
+    top: 36px;
+    left: 36px;
+    right: 36px;
+    bottom: 36px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../img/d-top-flower.png') no-repeat;
+    background-position: top right;
+    background-size: 100%;
+    width: 38%;
+    height: 68%;
+    z-index: 2;
+}
+
+.wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('../img/d-bottom-flower.png') no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    width: 38%;
+    height: 69%;
+    z-index: 2;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.inner-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+}
+
+.maindiv img {
+    max-width: 700px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+    body::before {
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    body::after {
+        top: 18px;
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .wrapper::before {
+        background-size: 100%;
+        width: 75%;
+        height: 68%;
+    }
+
+    .wrapper::after {
+        background-size: 100%;
+        width: 75%;
+        height: 68%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #mainVid {
+        width: 90%;
+    }
+}
