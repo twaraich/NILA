@@ -37,18 +37,6 @@
   height: auto;
 }
 
-#buyButton {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .close-button {
   position: absolute;
   top: 1px;
@@ -95,34 +83,6 @@
   color: #ffffff;
   margin-bottom: 25px;
 }
-/* 
-TODO: This is where the flag styling was added for special menu for Norway Independence Day, 
-also check mobile css near the bottom of this file --> */
-*/
-
-/* .flag-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  flex-direction: row; /* updated property */
-/* } */ 
-
-/* .flag-text {
-  font-family: var(--font--belleza);
-  font-style: bold;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 200%;
-  letter-spacing: 2px;
-  color: #e4cd1f;
-  position: relative;
-  margin-top: 10px;
-} */
-
-/* .flag-container a {
-  text-decoration: none;
-} */
 
 .know-more::after {
   content: "";
@@ -335,7 +295,7 @@ also check mobile css near the bottom of this file --> */
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 320px 320px 0px 0px;
+  border-radius: 320px 320px 0 0;
   border: 1px solid #fff;
   border-bottom: 0;
   position: relative;
@@ -601,7 +561,7 @@ also check mobile css near the bottom of this file --> */
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  line-height: 28wpx;
+  line-height: 28px;
   text-align: center;
   margin: 0 0 30px;
 }
@@ -1014,7 +974,7 @@ also check mobile css near the bottom of this file --> */
     font-size: 1rem; /* 18px converted to rem (18 / 14 = 1.2857) */
     line-height: 1.4em; /* Assuming the line-height should be normal, around 1.4 is standard */
     margin-bottom: 0.3571rem; /* 5px converted to rem (5 / 14 = 0.3571) */
-    /* Other styles remain unchanged */
+    display: inline-block
   }
 
   .section-catering br {
