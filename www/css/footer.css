@@ -89,7 +89,8 @@ footer p {
   padding: 10px 20px;
 }
 
-.section-contact .contact-us h5 { 
+
+.section-contact .contact-us h5 {
   font-family: var(--font--lamarkie);
   font-style: normal;
   font-weight: 400;
@@ -118,6 +119,16 @@ footer p {
   color: #fff;
   margin: 0;
 }
+
+.section-contact .contact-us a[href^="tel:"]:before {
+    content: "\260E"; /* Adds a telephone icon before the link */
+    margin-right: 5px;
+  }
+
+  .section-contact .contact-us a[href^="mailto:"]:before {
+    content: "\2709"; /* Adds an envelope icon before the link */
+    margin-right: 5px;
+  }
 
 .section-contact .contact-img {
   border-radius: 8px;

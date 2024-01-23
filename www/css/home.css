@@ -427,6 +427,7 @@ also check mobile css near the bottom of this file --> */
 
 .section-takeaway .takeaway-text {
   padding-left: 35px;
+  text-align: center;
 }
 
 .section-takeaway .takeaway-text h5 {
@@ -454,8 +455,7 @@ also check mobile css near the bottom of this file --> */
   color: #022eb9;
 }
 
-.section-takeaway p,
-.section-takeaway a {
+.section-takeaway p {
   font-style: normal;
   font-weight: 350;
   text-align: center;
@@ -464,8 +464,28 @@ also check mobile css near the bottom of this file --> */
   color: #00051a;
   margin: 0 0 50px;
   text-decoration: none;
-  display: block; /* Make the link occupy its own line */
+  display: block; 
 }
+
+.section-takeaway a {
+  background-color: #e0e0e0;
+  padding: 9px 10px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 5px;
+  text-align: center;
+  margin: 0 0 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: #00030e;
+}
+
+.section-takeaway a[href^="tel:"]:before {
+    content: "\260E"; /* Adds a telephone icon before the link */
+    margin-right: 5px;
+  }
 
 .flowers {
   background: url("../images/flower.png") no-repeat center center;
@@ -587,15 +607,28 @@ also check mobile css near the bottom of this file --> */
 }
 
 .section-catering .catering-content a {
+  background-color: #e0e0e0;
+  padding: 9px 10px;
+  border-radius: 5px;
   font-style: normal;
   font-weight: 350;
   font-size: 20px;
-  line-height: 5px; /* Correct the 'wpx' to 'px' */
+  line-height: 5px;
   text-align: center;
   margin: 0 0 5px;
-  display: block; /* Make the link occupy its own line */
-  text-decoration: none; /* Remove underline */
-  color: #00030e; /* Set the color of the text, if you want to change it */
+  display: inline-block;
+  text-decoration: none;
+  color: #00030e;
+}
+
+.section-catering .catering-content a[href^="tel:"]:before {
+  content: "\260E"; /* Adds a telephone icon before the link */
+  margin-right: 5px;
+}
+
+.section-catering .catering-content a[href^="mailto:"]:before {
+  content: "\2709"; /* Adds an envelope icon before the link */
+  margin-right: 5px;
 }
 
 .section-catering h6 {
