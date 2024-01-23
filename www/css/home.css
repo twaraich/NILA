@@ -12,63 +12,84 @@
 
 /*---------Popup ad css--------------------------------------*/
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
 .popup-content {
-    background-color: transparent; /* Removed the white background */
-    padding: 0; /* Removed padding */
-    max-width: 400px;
-    text-align: center;
-    position: relative;
+  background-color: transparent; /* Removed the white background */
+  padding: 0; /* Removed padding */
+  max-width: 400px;
+  text-align: center;
+  position: relative;
 }
 
 .popup-content img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #buyButton {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-  }
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 .close-button {
-    position: absolute;
-    top: 1px;
-    right: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
-    color: white; /* Changed to white for better visibility */
-    background-color: rgba(0, 0, 0, 0.7); /* Added a dark background */
-    padding: 2px 5px; /* Added padding for better spacing */
-    border-radius: 50%; /* Rounded corners for aesthetic */
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  color: white; /* Changed to white for better visibility */
+  background-color: rgba(0, 0, 0, 0.7); /* Added a dark background */
+  padding: 2px 5px; /* Added padding for better spacing */
+  border-radius: 50%; /* Rounded corners for aesthetic */
 }
-  
+
 /*-----------------------------------------------*/
 
+.press {
+  padding: 50px 0;
+  padding: 200px 0;
+  padding-top: 80px;
+  position: relative;
+  position: relative;
+  background: url("../images/menu-page-banner.jpg") no-repeat center center;
+  background-size: cover;
+}
 
+.press h3 {
+  font-family: var(--font--lamarkie);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
 
 /* 
 TODO: This is where the flag styling was added for special menu for Norway Independence Day, 
-also check mobile css near the bottom of this file --> */ */
+also check mobile css near the bottom of this file --> */
+*/
 
 /* .flag-container {
   display: flex;
@@ -133,6 +154,18 @@ also check mobile css near the bottom of this file --> */ */
   text-align: center;
   letter-spacing: 2px;
   color: #ffffff;
+  margin: 0;
+}
+
+.banner h1 p.small-title {
+  font-size: 25px;
+  font-family: var(--font--lamarkie);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
   margin: 0 0 100px;
 }
 
@@ -162,7 +195,7 @@ also check mobile css near the bottom of this file --> */ */
   border: 1px solid #fff;
   padding: 15px 25px;
   position: absolute;
-  bottom: 60px;
+  bottom: 120px;
   left: 50%;
   width: 300px;
   margin-left: -150px;
@@ -223,7 +256,7 @@ also check mobile css near the bottom of this file --> */ */
 .about p {
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #00051a;
   margin: 20px 0 30px;
@@ -235,16 +268,7 @@ also check mobile css near the bottom of this file --> */ */
   height: 110px;
   display: inline-block;
   margin: 0 4px;
-  background: radial-gradient(
-    1831.88% 35.36% at 49.99% 49.99%,
-    #ffec00 0%,
-    #ffec00 0.21%,
-    #e5cb2c 14.42%,
-    #d1b43a 29.86%,
-    #c3a440 47.2%,
-    #bb9b42 67.79%,
-    #b99843 100%
-  );
+  background: radial-gradient(1831.88% 35.36% at 49.99% 49.99%, #ffec00 0%, #ffec00 0.21%, #e5cb2c 14.42%, #d1b43a 29.86%, #c3a440 47.2%, #bb9b42 67.79%, #b99843 100%);
 }
 
 .about .vertical-line.no-animate {
@@ -384,6 +408,7 @@ also check mobile css near the bottom of this file --> */ */
   font-family: var(--font--lamarkie);
   font-style: normal;
   font-weight: 400;
+  text-align: center;
   font-size: 55px;
   line-height: 110px;
   letter-spacing: 2px;
@@ -393,6 +418,19 @@ also check mobile css near the bottom of this file --> */ */
 
 .section-takeaway .takeaway-text {
   padding-left: 35px;
+}
+
+.section-takeaway .takeaway-text h5 {
+  font-family: var(--font--lamarkie);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #00051a;
+  margin: 0 0 5px;
+  padding: 5px 5px;
 }
 
 .section-takeaway .sub-title {
@@ -407,17 +445,17 @@ also check mobile css near the bottom of this file --> */ */
   color: #022eb9;
 }
 
-.section-takeaway p {
+.section-takeaway p,
+.section-takeaway a {
   font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 350;
+  text-align: center;
+  font-size: 18px;
   line-height: 35px;
   color: #00051a;
   margin: 0 0 50px;
-}
-
-.section-takeaway a {
   text-decoration: none;
+  display: block; /* Make the link occupy its own line */
 }
 
 .flowers {
@@ -460,7 +498,7 @@ also check mobile css near the bottom of this file --> */ */
 .section-chef p {
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   color: #00030e;
   margin-bottom: 30px;
@@ -501,6 +539,9 @@ also check mobile css near the bottom of this file --> */ */
 
 .section-catering .catering-content {
   max-width: 700px;
+  margin: 0 auto; /* This centers the div */
+  text-align: center;
+  margin-top: 0; /* If you want to also center the text inside the div */
 }
 
 .section-catering h4 {
@@ -532,18 +573,45 @@ also check mobile css near the bottom of this file --> */ */
   font-weight: 300;
   font-size: 18px;
   line-height: 28wpx;
+  text-align: center;
   margin: 0 0 30px;
+}
+
+.section-catering .catering-content a {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 5px; /* Correct the 'wpx' to 'px' */
+  text-align: center;
+  margin: 0 0 5px;
+  display: block; /* Make the link occupy its own line */
+  text-decoration: none; /* Remove underline */
+  color: #00030e; /* Set the color of the text, if you want to change it */
 }
 
 .section-catering h6 {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
+  text-align: center;
   line-height: 30px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #00030e;
   margin: 0 0 20px;
+}
+
+.section-catering h5 {
+  font-family: var(--font--lamarkie);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  /* text-align: center; */
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #00030e;
+  margin: 0 0 5px;
+  padding: 5px 5px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -592,6 +660,23 @@ also check mobile css near the bottom of this file --> */ */
     line-height: 200%;
   }
 
+  .banner h1 p.small-title {
+    font-size: 20px;
+  }
+
+  .section-catering {
+    background-size: 40% auto;
+    background-position: right bottom;
+    padding: 125px 0 280px;
+    text-align: center;
+  }
+
+  .section-catering .catering-content a {
+    font-size: 1rem; /* 18px converted to rem (18 / 14 = 1.2857) */
+    margin-bottom: 0.3571rem; /* 5px converted to rem (5 / 14 = 0.3571) */
+    /* Other styles remain unchanged */
+  }
+
   .section-food-menu h3 span,
   .banner h1 span {
     font-size: 50px;
@@ -626,6 +711,9 @@ also check mobile css near the bottom of this file --> */ */
     line-height: 30px;
   }
 
+  .banner h1 p.small-title {
+    font-size: 15px;
+  }
   .about {
     padding: 65px 0 220px;
   }
@@ -652,6 +740,10 @@ also check mobile css near the bottom of this file --> */ */
 @media screen and (max-width: 580px) {
   .banner h1 {
     margin: 0 0 20px;
+  }
+
+  .banner h1 p.small-title {
+    padding-top: 5;
   }
   /* .flag-container {
     padding-top: 20px;
@@ -870,10 +962,17 @@ also check mobile css near the bottom of this file --> */ */
   }
 
   .section-catering {
-    background-size: 60% auto;
+    background-size: 50% auto;
     background-position: right bottom;
     padding: 125px 0 280px;
     text-align: center;
+  }
+
+  .section-catering .catering-content a {
+    font-size: 1rem; /* 18px converted to rem (18 / 14 = 1.2857) */
+    line-height: 1.4em; /* Assuming the line-height should be normal, around 1.4 is standard */
+    margin-bottom: 0.3571rem; /* 5px converted to rem (5 / 14 = 0.3571) */
+    /* Other styles remain unchanged */
   }
 
   .section-catering br {
@@ -904,7 +1003,7 @@ also check mobile css near the bottom of this file --> */ */
   text-transform: uppercase;
   letter-spacing: 2;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   color: #121212;
   vertical-align: middle;
@@ -929,5 +1028,3 @@ also check mobile css near the bottom of this file --> */ */
   position: relative;
   top: 2px;
 }
-
-
