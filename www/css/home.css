@@ -74,6 +74,16 @@
   background-size: cover;
 }
 
+.press h4 {
+  font-style: normal;
+
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #00030e;
+  margin: 0 0 20px;
+}
+
 .press h3 {
   font-family: var(--font--lamarkie);
   font-style: normal;
@@ -85,7 +95,6 @@
   color: #ffffff;
   margin-bottom: 25px;
 }
-
 /* 
 TODO: This is where the flag styling was added for special menu for Norway Independence Day, 
 also check mobile css near the bottom of this file --> */
